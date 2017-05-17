@@ -84,6 +84,19 @@ $ git commit -m"debugging"
 $ git push origin master
 ```
 
+## Report
+
+```bash
+$ cd ~/workspace/labs/
+$ export LAB_NUMBER=11
+$ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
+$ mkdir reports/lab${LAB_NUMBER}
+$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
+$ cd reports/lab${LAB_NUMBER}
+$ edit REPORT.md
+$ gistup -m"lab${LAB_NUMBER}"
+```
+
 ## Links
 
 - [gdb](https://www.gnu.org/software/gdb/)
