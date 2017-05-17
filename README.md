@@ -11,6 +11,7 @@ $ open https://lldb.llvm.org/tutorial.html
 - [ ] 1. Создать публичный репозиторий с названием **lab11** на сервисе **GitHub**
 - [ ] 2. Выполнить инструкцию учебного материала
 - [ ] 3. Ознакомиться со ссылками учебного материала
+- [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
@@ -74,8 +75,7 @@ $ lldb demo
 ```
 
 ```bash
-$ mkdir artifacts && cd artifacts
-$ screencapture screenshot.jpg
+$ sed -i '' 's/lab10/lab11/' README.md
 ```
 
 ```bash
@@ -89,3 +89,7 @@ $ git push origin master
 - [gdb](https://www.gnu.org/software/gdb/)
 - [lldb](https://lldb.llvm.org)
 - [windbg](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745911(v=vs.85).aspx)
+
+```
+Copyright (c) 2017 Vyacheslav Vershinin
+```
