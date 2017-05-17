@@ -75,7 +75,7 @@ $ lldb demo
 ```
 
 ```bash
-$ sed -i '' 's/lab10/lab11/' README.md
+$ sed -i '' 's/lab10/lab11/g' README.md
 ```
 
 ```bash
