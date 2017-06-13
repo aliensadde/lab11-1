@@ -2,7 +2,7 @@
 
 Данная лабораторная работа посвещена изучению инструментов отладки на примере **lldb**
 
-```bash
+```ShellSession
 $ open https://lldb.llvm.org/tutorial.html
 ```
 
@@ -15,24 +15,24 @@ $ open https://lldb.llvm.org/tutorial.html
 
 ## Tutorial
 
-```bash
+```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 ```
 
-```bash
+```ShellSession
 $ git clone https://github.com/${GITHUB_USERNAME}/lab10 lab11
 $ cd lab11
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab11
 ```
 
-```bash
+```ShellSession
 $ cmake -H. -B_build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=_install
 $ cmake --build _build --target install
 $ cd _install/bin
 ```
 
-```bash
+```ShellSession
 $ lldb demo
 (lldb) process launch --stop-at-entry
 (lldb) breakpoint list
@@ -43,7 +43,7 @@ $ lldb demo
 (lldb) exit
 ```
 
-```bash
+```ShellSession
 $ demo
 <Command>-T
 $ ps
@@ -53,7 +53,7 @@ $ lldb
 (lldb) exit
 ```
 
-```bash
+```ShellSession
 $ lldb demo
 (lldb) process launch --stop-at-entry -- -program_arg "text1 text2 text3"
 (lldb) thread list
@@ -62,7 +62,7 @@ $ lldb demo
 (lldb) frame variable argv[0] 
 ```
 
-```bash
+```ShellSession
 $ lldb demo
 (lldb) process launch --stop-at-entry
 (lldb) thread continue
@@ -74,11 +74,11 @@ $ lldb demo
 (lldb) exit
 ```
 
-```bash
+```ShellSession
 $ sed -i '' 's/lab10/lab11/g' README.md
 ```
 
-```bash
+```ShellSession
 $ git add .
 $ git commit -m"debugging"
 $ git push origin master
@@ -86,7 +86,7 @@ $ git push origin master
 
 ## Report
 
-```bash
+```ShellSession
 $ cd ~/workspace/labs/
 $ export LAB_NUMBER=11
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
