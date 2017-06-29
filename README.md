@@ -37,7 +37,7 @@ $ lldb demo
 (lldb) process launch --stop-at-entry
 (lldb) breakpoint list
 (lldb) breakpoint set --name print
-(lldb) breakpoint set --file demo.cpp --line 12
+(lldb) breakpoint set --file demo.cpp --line 6
 (lldb) breakpoint list
 (lldb) process launch
 (lldb) exit
