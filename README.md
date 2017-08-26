@@ -75,6 +75,7 @@ $ lldb demo
 ```
 
 ```ShellSession
+$ cd ../..
 $ sed -i '' 's/lab10/lab11/g' README.md
 ```
 
