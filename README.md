@@ -17,6 +17,7 @@ $ open https://lldb.llvm.org/tutorial.html
 
 ```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
+$ alias gsed=sed # for *-nix system
 ```
 
 ```ShellSession
@@ -76,7 +77,7 @@ $ lldb demo
 
 ```ShellSession
 $ cd ../..
-$ sed -i '' 's/lab10/lab11/g' README.md
+$ gsed -i 's/lab10/lab11/g' README.md
 ```
 
 ```ShellSession
